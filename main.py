@@ -412,7 +412,7 @@ initState1 = printPuzzle(goal, "Init S1")
 initState2 = printPuzzle(goal, "Init S2")
 initState3 = printPuzzle(goal, "Init S3")
 allPlots.append(goal1)
-with open('p_graph.html', 'a') as f:
+with open('p_graph.html', 'w') as f:
     f.write(goal1.to_html(full_html=False, include_plotlyjs='cdn'))
 
 i = 1
